@@ -1,0 +1,140 @@
+body {
+  background-color: #005594;
+}
+.container {
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  max-height: 650px;
+  max-width: 40%;
+  width: 40%;
+}
+
+.content,
+.card-inputs,
+.logo,
+.div-input,
+form,
+form > div,
+.button,
+.card-select {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  margin: 5% 0;
+  width: 100%;
+}
+
+.logo > img {
+  width: 150px;
+  margin: 5% 0;
+}
+
+.logo > h3 {
+  width: 80%;
+  color: rgb(23, 23, 167);
+  text-align: center;
+}
+
+.content > h4 {
+  text-align: center;
+  word-break: break-word;
+  width: 80%;
+}
+
+.div-input {
+  height: 50%;
+  margin-bottom: 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 80%;
+}
+
+form {
+  padding-top: 1210px;
+}
+
+form > div {
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 100%;
+  flex-direction: row;
+}
+
+.button > button,
+a > button {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 30%;
+  margin: 0 5%;
+}
+
+.button > a {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  text-decoration: none;
+  width: 30%;
+}
+
+.button > a > button[type="submit"] {
+  background-color: rgb(59, 173, 59);
+  color: white;
+  width: 100%;
+}
+
+.button > a > button[type="submit"]:hover {
+  background-color: green;
+  font-weight: bold;
+}
+
+.button > button[type="reset"]:hover {
+  background-color: rgb(217, 217, 217);
+  font-weight: bold;
+}
+
+.card-inputs,
+.card-select {
+  background-color: rgb(225, 225, 225);
+  border-radius: 5px;
+  height: 80px;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.card-inputs > .inputs,
+.select {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs > label,
+.select > label {
+  margin: 5px 0;
+}
+
+.inputs > input,
+.select > select {
+  width: 450px;
+  height: 20px;
+}
+
+.select > select {
+  height: 30px;
+}

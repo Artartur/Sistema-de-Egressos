@@ -1,0 +1,124 @@
+.container-login {
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  max-height: 550px;
+  max-width: 40%;
+  width: 30%;
+}
+
+.content-login,
+.logo-login,
+.div-input-login,
+.button-login,
+.cadastrar, .card-logo, .card-inputs-cadastro{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-logo{
+  margin: 10% 0;
+}
+
+.card-logo > img{
+  margin: 4% 0;
+  width: 160px;
+}
+
+.card-logo > h2 {
+  color: #005594;
+  text-align: center;
+}
+
+.content-login {
+  width: 100%;
+}
+
+.div-input-login {
+  height: 40%;
+  width: 90%;
+}
+
+.div-input-login > form {
+  padding-top: 10%;
+  width: 100%;
+}
+
+.div-input-login > form > select,
+.input {
+  width: 90%;
+  margin: 3% 0;
+  height: 40px;
+  text-align: start;
+  align-items: center;
+}
+
+.cadastrar {
+  margin-right: 63%;
+  font-size: 16px;
+}
+
+.cadastrar > button{
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: #929292;
+  font-size: 15px; 
+}
+
+.cadastrar > button:hover{
+  color: blue;
+}
+
+.button-login {
+  width: 100%;
+}
+
+.button-login > button {
+  background-color: #f78b1f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  text-decoration: none;
+  width: 90%;
+  margin: 3% 0;
+}
+
+.button-login > button:hover {
+  background-color: #e18427;
+  font-weight: bold;
+}
+
+.card-inputs-cadastro{
+  width: 100%;
+}
+
+.card-inputs-cadastro > .inputs-cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.inputs-cadastro > label{
+    margin: 5px 0;
+    margin-right: 70%;
+}
+
+.inputs-cadastro > input{
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+}
