@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function Select(props){
+export default function SelectForm(props){
 
     const opcoes = [
       ['Masculino','Feminino','Prefiro não dizer'],
       ['Solteiro', 'Casado','Separado', 'Divorciado', 'Viúvo'],
       ['Sim, possuo carro', 'Sim, possuo moto', 'Sim, possuo carro e moto', 'Não'],
-      ['AC','AL','AP','AM','BA','CE', 'DF','ES','GO', 'MA','MT','MS','MG','PA','PB', 'PR','PE','PI','RR','RO','RJ','RN','RS','SC', 'SP', 'SE' , 'TO']
+      ['AC','AL','AP','AM','BA','CE', 'DF','ES','GO', 'MA','MT','MS','MG','PA','PB', 'PR','PE','PI','RR','RO','RJ','RN','RS','SC', 'SP', 'SE' , 'TO'],
+      ['Não possuo', 'A', 'B', 'A e B', 'Outra'],
+      ['Sim','Não']
     ]
   
     

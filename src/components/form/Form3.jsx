@@ -4,9 +4,7 @@ import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
 
-export default function Form() {
-  const navigate = useNavigate();
-
+export default function Form3() {
   return (
     <>
       <div className="container">
@@ -34,33 +32,30 @@ export default function Form() {
         <div className="div-input">
           <form>
             <div>
-              <InputForm title="Email" type="email" />
-              <InputForm title="Nome Completo" type="text" />
-              <InputForm title="Data de Nascimento" type="date" />
-              <SelectForm title="Sexo" indice={0} />
-              <SelectForm title="Estado Civil" indice={1} />
-              <SelectForm title="Carteira de Motorista" indice={4} />
-              <SelectForm title="Possui veículo" indice={2} />
-              <InputForm title="Endereço" type="text" />
-              <InputForm title="Complemento" type="text" />
-              <InputForm title="Bairro" type="text" />
-              <InputForm title="Cidade" type="text" />
-              <SelectForm title="UF" indice={3} />
-              <InputForm title="CEP" type="text" />
-              <InputForm title="Telefone Residecial" type="text" />
+              <h4>
+                Autorização para divulgação de dados conforme Lei Federal Nº
+                13.709 de 14/08/2018 * AUTORIZO, desde já, o uso dos dados
+                cadastrais, bem como o currículo profissional, ora informados, a
+                título gratuito, pelo Serviço Nacional de Aprendizagem Comercial
+                - SENAC/PE, para a troca dos mesmos, com empresas parceiras e/ou
+                instituições públicas, com a finalidade de gerar e promover
+                oportunidades profissionais, nas áreas em que obtive formação na
+                instituição. Esta autorização poderá ser revogada a qualquer
+                momento, conforme exposto no Art. 18 da Lei Federal Nº 13.709 de
+                14/08/2018, mediante simples requerimento a Instituição ou
+                diretamente com o setor responsável através do e-mail:
+                copeg-dep@pe.senac.br
+              </h4>
+              <SelectForm title="Autorização" indice={5} />
               <InputForm
-                title="Telefone Celular (Preferência Whatsapp) "
-                type="text"
+                title="Gostaríamos de solicitar o seu currículo para encaminhar para as empresas."
+                name="upload"
+                type="file"
+                accept="application/pdf"
               />
             </div>
             <div className="button">
-              <button
-                onClick={() => {
-                  navigate("/form/page2");
-                }}
-              >
-                Próxima Página
-              </button>
+              <button onClick={() => {}}>Enviar</button>
               <button type="reset">Limpar Formulário</button>
             </div>
           </form>

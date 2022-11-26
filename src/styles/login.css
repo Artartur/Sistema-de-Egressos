@@ -17,18 +17,19 @@
 .logo-login,
 .div-input-login,
 .button-login,
-.cadastrar, .card-logo, .card-inputs-cadastro{
+.cadastrar,
+.card-logo, .content-cadastro, .div-input-cadastro, .form-cadastro, .form-cadastro > div, .buttons, .buttons > button{
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card-logo{
+.card-logo {
   margin: 10% 0;
 }
 
-.card-logo > img{
+.card-logo > img {
   margin: 4% 0;
   width: 160px;
 }
@@ -66,15 +67,15 @@
   font-size: 16px;
 }
 
-.cadastrar > button{
+.cadastrar > button {
   border: none;
   background-color: white;
   text-decoration: underline;
   color: #929292;
-  font-size: 15px; 
+  font-size: 15px;
 }
 
-.cadastrar > button:hover{
+.cadastrar > button:hover {
   color: blue;
 }
 
@@ -99,26 +100,63 @@
   font-weight: bold;
 }
 
-.card-inputs-cadastro{
+.content-cadastro{
+  height: 60%;
+  width: 90%;
+}
+
+.div-input-cadastro{
+  margin-bottom: 5%;
+}
+
+.div-input-cadastro, .form-cadastro, .form-cadastro > div{
   width: 100%;
 }
 
-.card-inputs-cadastro > .inputs-cadastro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
+.form-cadastro{
+  padding-top: 10%;
 }
 
-.inputs-cadastro > label{
-    margin: 5px 0;
-    margin-right: 70%;
+.form-cadastro > div{
+  height: 200px;
 }
 
-.inputs-cadastro > input{
-  width: 80%;
+.form-cadastro > div > select{
+  margin: 10px 0;
+  width: 100%;
   height: 30px;
-  border-radius: 5px;
-  border-width: 1px;
+  padding: 1%;
+
+}
+
+.buttons{
+  flex-direction: row;
+  margin: 5%;
+  width: 100%;
+}
+
+.buttons > button{
+  flex-direction: row;
+  border: none;
+  border-radius:5px;
+  margin: 0 4%;
+  height: 30px;
+  width: 33%;
+  font-size: 15px;
+}
+
+.buttons > button[type="submit"]{
+  background-color: #F78B1F;
+}
+
+.buttons > button[type="submit"]:hover{
+  background-color: #da8530;
+  color:white;
+}
+
+.buttons > button[type="reset"]{
+  background-color: white;
+}
+.buttons > button[type="reset"]:hover, .buttons > button:hover{
+  background-color: rgb(208, 208, 208);
 }

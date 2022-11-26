@@ -4,7 +4,7 @@ import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
 
-export default function Form() {
+export default function Form2() {
   const navigate = useNavigate();
 
   return (
@@ -34,29 +34,32 @@ export default function Form() {
         <div className="div-input">
           <form>
             <div>
-              <InputForm title="Email" type="email" />
-              <InputForm title="Nome Completo" type="text" />
-              <InputForm title="Data de Nascimento" type="date" />
-              <SelectForm title="Sexo" indice={0} />
-              <SelectForm title="Estado Civil" indice={1} />
-              <SelectForm title="Carteira de Motorista" indice={4} />
-              <SelectForm title="Possui veículo" indice={2} />
-              <InputForm title="Endereço" type="text" />
-              <InputForm title="Complemento" type="text" />
-              <InputForm title="Bairro" type="text" />
-              <InputForm title="Cidade" type="text" />
-              <SelectForm title="UF" indice={3} />
-              <InputForm title="CEP" type="text" />
-              <InputForm title="Telefone Residecial" type="text" />
+              <InputForm type="text" name="curso" title="Curso" />
               <InputForm
-                title="Telefone Celular (Preferência Whatsapp) "
-                type="text"
+                type="month"
+                name="conclusão"
+                title="Ano de Conclusão"
               />
+              {/* checkbox */}
+              <InputForm type="text" name="curso2" title="2º Curso" />
+              <InputForm
+                type="month"
+                name="conclusão2"
+                title="Ano de Conclusão"
+              />
+              {/* checkbox */}
+              <InputForm type="text" name="curso3" title="3º Curso" />
+              <InputForm
+                type="month"
+                name="conclusão3"
+                title="Ano de Conclusão"
+              />
+              {/* checkbox */}
             </div>
             <div className="button">
               <button
                 onClick={() => {
-                  navigate("/form/page2");
+                  navigate("/form/page3");
                 }}
               >
                 Próxima Página

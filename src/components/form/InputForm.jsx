@@ -6,7 +6,7 @@ export default function InputForm (props){
         <div className="card-inputs">
           <div className="inputs">
             <label htmlFor={props.title}>{props.title}</label>
-            <input type={props.type} />
+            <input type={props.type} placeholder={props.title} name={props.name} required={props.required}/>
           </div>
         </div>
       </>

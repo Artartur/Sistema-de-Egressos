@@ -2,13 +2,9 @@ body {
   background-color: #005594;
 }
 .container {
-  align-items: center;
   background-color: rgb(249, 249, 249);
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
   height: 650px;
-  justify-content: center;
   margin: 0 auto;
   margin-top: 3%;
   max-height: 650px;
@@ -16,9 +12,10 @@ body {
   width: 40%;
 }
 
+.container,
+.logo,
 .content,
 .card-inputs,
-.logo,
 .div-input,
 form,
 form > div,
@@ -30,11 +27,6 @@ form > div,
   justify-content: center;
 }
 
-.content {
-  margin: 5% 0;
-  width: 100%;
-}
-
 .logo > img {
   width: 150px;
   margin: 5% 0;
@@ -44,6 +36,11 @@ form > div,
   width: 80%;
   color: rgb(23, 23, 167);
   text-align: center;
+}
+
+.content {
+  margin: 5% 0;
+  width: 100%;
 }
 
 .content > h4 {
@@ -61,11 +58,17 @@ form > div,
 }
 
 form {
-  padding-top: 1210px;
+  padding-top: 1300px;
 }
 
 form > div {
   margin-bottom: 10px;
+}
+
+form > div > h4 {
+  text-align: center;
+  word-break: break-word;
+  width: 100%;
 }
 
 .button {
@@ -73,33 +76,27 @@ form > div {
   flex-direction: row;
 }
 
-.button > button,
-a > button {
+.button > button {
   border: none;
   border-radius: 5px;
   height: 40px;
   width: 30%;
-  margin: 0 5%;
+  margin: 0% 3%;
 }
 
-.button > a {
-  border: none;
-  border-radius: 5px;
-  color: white;
-  height: 40px;
-  text-decoration: none;
-  width: 30%;
-}
-
-.button > a > button[type="submit"] {
+.button > button[type="submit"] {
   background-color: rgb(59, 173, 59);
   color: white;
-  width: 100%;
+  width: 50%;
 }
 
-.button > a > button[type="submit"]:hover {
+.button > button[type="submit"]:hover {
   background-color: green;
   font-weight: bold;
+}
+
+.button > button[type="reset"] {
+  width: 50%;
 }
 
 .button > button[type="reset"]:hover {
@@ -132,9 +129,9 @@ a > button {
 .inputs > input,
 .select > select {
   width: 450px;
-  height: 20px;
-}
-
-.select > select {
   height: 30px;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
