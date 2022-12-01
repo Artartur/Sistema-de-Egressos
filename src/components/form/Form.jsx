@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaAngleLeft, FaAngleRight  } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
@@ -54,14 +55,22 @@ export default function Form() {
               />
             </div>
             <div className="button">
+            <button
+                onClick={() => {
+                  navigate("/");
+                }}
+              > <FaAngleLeft/>
+                Voltar
+              </button>
+              <button type="reset">Limpar Formulário</button>
               <button
                 onClick={() => {
                   navigate("/form/page2");
                 }}
               >
                 Próxima Página
+                <FaAngleRight/>
               </button>
-              <button type="reset">Limpar Formulário</button>
             </div>
           </form>
         </div>

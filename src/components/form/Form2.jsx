@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import InputForm from "./InputForm";
+import { FaAngleLeft, FaAngleRight  } from "react-icons/fa";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
 
@@ -57,14 +58,22 @@ export default function Form2() {
               {/* checkbox */}
             </div>
             <div className="button">
+            <button
+                onClick={() => {
+                  navigate("/form");
+                }}
+              > <FaAngleLeft/>
+                Voltar
+              </button>
+              <button type="reset">Limpar Formulário</button>
               <button
                 onClick={() => {
                   navigate("/form/page3");
                 }}
               >
                 Próxima Página
+                <FaAngleRight/>
               </button>
-              <button type="reset">Limpar Formulário</button>
             </div>
           </form>
         </div>

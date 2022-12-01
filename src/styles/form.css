@@ -20,7 +20,8 @@ body {
 form,
 form > div,
 .button,
-.card-select {
+.card-select,
+.button > button{
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -82,12 +83,13 @@ form > div > h4 {
   height: 40px;
   width: 30%;
   margin: 0% 3%;
+  flex-direction: row;
 }
 
 .button > button[type="submit"] {
   background-color: rgb(59, 173, 59);
   color: white;
-  width: 50%;
+  width: 30%;
 }
 
 .button > button[type="submit"]:hover {
@@ -96,7 +98,7 @@ form > div > h4 {
 }
 
 .button > button[type="reset"] {
-  width: 50%;
+  width: 30%;
 }
 
 .button > button[type="reset"]:hover {

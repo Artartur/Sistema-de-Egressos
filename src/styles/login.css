@@ -145,6 +145,10 @@
   font-size: 15px;
 }
 
+.input{
+  padding: 1%;
+}
+
 .buttons > button[type="submit"]{
   background-color: #F78B1F;
 }
