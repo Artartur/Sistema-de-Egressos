@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
-import Container from "../container";
+import Container from "./container";
 import "../../styles/form.css";
 
 export default function Form() {
@@ -37,7 +37,7 @@ export default function Form() {
             <div className="button">
               <button
                 onClick={() => {
-                  navigate("/");
+                  navigate("/telaaluno");
                 }}
               >
                 {" "}
@@ -45,7 +45,7 @@ export default function Form() {
                 Voltar
               </button>
               <button type="reset">Limpar Formulário</button>
-              <button
+              <button 
                 onClick={() => {
                   navigate("/form/page2");
                 }}

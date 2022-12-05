@@ -62,6 +62,15 @@ form {
   padding-top: 1300px;
 }
 
+.form2{
+  padding-top: 80%;
+}
+
+.form3{
+  padding-top: 50%;
+}
+
+
 form > div {
   margin-bottom: 10px;
 }
@@ -86,6 +95,19 @@ form > div > h4 {
   width: 30%;
 }
 
+.button > button:first-of-type:hover{
+    background-color: rgb(195, 195, 195);
+}
+
+.button > button:last-of-type{
+  background-color: rgb(59, 173, 59);
+  color:white;
+}
+
+.button > button:last-of-type:hover{
+  background-color: green;
+}
+
 .button > button[type="submit"] {
   background-color: rgb(59, 173, 59);
   color: white;
@@ -94,7 +116,6 @@ form > div > h4 {
 
 .button > button[type="submit"]:hover {
   background-color: green;
-  font-weight: bold;
 }
 
 .button > button[type="reset"] {
@@ -103,7 +124,6 @@ form > div > h4 {
 
 .button > button[type="reset"]:hover {
   background-color: rgb(217, 217, 217);
-  font-weight: bold;
 }
 
 .card-inputs,

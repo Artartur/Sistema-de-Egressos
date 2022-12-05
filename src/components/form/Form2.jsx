@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import InputForm from "./InputForm";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import Container from "../container";
+import Container from "./container";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
 
@@ -13,7 +13,7 @@ export default function Form2() {
     <>
       <Container>
         <div className="div-input">
-          <form>
+          <form className="form2">
             <div>
               <InputForm type="text" name="curso" title="Curso" />
               <InputForm

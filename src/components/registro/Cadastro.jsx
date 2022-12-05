@@ -1,67 +1,83 @@
 import React, { useState } from "react";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
-import Input from "./Input";
+import ContainerCadastro from "./ContainerCadastro";
+import api from "../../services/axios"
+import useAuth from "../../hooks/useAuth";
 
 const Cadastro = () => {
   
   const navigate = useNavigate();
 
-  const options = [
-    { id: 0, label: "Sexo" },
-    { id: 1, label: "Masculino" },
-    { id: 2, label: "Feminino" },
-    { id: 3, label: "Prefiro não informar" }
-  ];
-
-  const [selectValue, setSelectValue] = useState(options[0].label);
-
-  const[values ,setValues]= useState();
-
-  const handleChangeValues = (value) =>{
-    setValues((prevValue)=>({
-      ...prevValue,
-      [value.target.name]: value.target.value
-    }))
-  }
-
-  const handleSubmit = () =>{
-
-  }
   
+  const [values, setValues] = useState();
+  // const [error, setError] = useState("");
+  // const {cadastrar} = useAuth();
+
+  const options = ['Masculino', 'Feminino', 'Prefiro não Informar'];
+
+  const handleChangeValues = (value) => {
+    setValues((prevValue) => ({
+      ...prevValue,
+      [value.target.name]: value.target.value,
+    }));
+  };
+
+  const handleSubmit = () => {
+    api.post("http://localhost:3001/registro", {
+      nome: values.nome,
+      email: values.email,
+      cpf: values.cpf,
+      sexo: values.sexo,
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+  };
+
   return (
     <>
-      <div className="container-login">
-        <div className="logo-login">
-          <div className="card-logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Senac_logo.svg/2560px-Senac_logo.svg.png"
-              alt="logo do senac"
-            />
-            <h2>Sistema de Egressos</h2>
-          </div>
-        </div>
+      <ContainerCadastro>
         <div className="content-cadastro">
           <div className="div-input-cadastro">
             <form className="form-cadastro">
               <div>
-                <Input type="text" title="Nome Completo" required={true} name="nome" onChange={handleChangeValues}/>
-                <Input type="email" title="Email" required={true} name="email" onChange={handleChangeValues}/>
-                <Input type="text" title="CPF" required={true} name="cpf" onChange={handleChangeValues}/>
-                <select
-                  name="opcao"
-                  id="opcao"
-                  value={selectValue}
-                  onChange={(e) => setSelectValue(e.target.value)}
-                >
+                <label htmlFor="nome">Nome Completo</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  placeholder="Nome Completo"
+                  required={true}
+                  onChange={handleChangeValues}
+                />
+                <label htmlFor="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                  required={true}
+                  name="email"
+                  onChange={handleChangeValues}
+                />
+                <label htmlFor="cpf">CPF</label>
+                <input
+                  type="text"
+                  placeholder="CPF"
+                  required={true}
+                  name="cpf"
+                  onChange={handleChangeValues}
+                />
+                <select name="sexo" id="sexo" onChange={handleChangeValues}>
                   {options.map((opcao) => (
-                    <option key={opcao.id} value={opcao.label}>
-                      {opcao.label}
-                    </option>
+                    <option key={opcao} value={opcao}>{opcao}</option>
                   ))}
                 </select>
-                {selectValue == options[0].label ? "Escolha um gênero válido" : ""}
+
                 <div className="buttons">
                   <button
                     onClick={() => {
@@ -72,13 +88,15 @@ const Cadastro = () => {
                     Voltar
                   </button>
                   <button type="reset">Limpar dados</button>
-                  <button type="submit" onClick={()=>handleSubmit()}>Cadastrar</button>
+                  <button type="submit" onClick={() => handleSubmit()}>
+                    Cadastrar
+                  </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      </ContainerCadastro>
     </>
   );
 };

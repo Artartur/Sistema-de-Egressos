@@ -4,15 +4,16 @@ import { FaAngleLeft, FaAngleRight  } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
-import Container from "../container";
+import Container from "./container";
 
 export default function Form3() {
   const navigate = useNavigate();
   return (
     <>
       <Container>
+
       <div className="div-input">
-          <form>
+          <form className="form3">
             <div>
               <h4>
                 Autorização para divulgação de dados conforme Lei Federal Nº

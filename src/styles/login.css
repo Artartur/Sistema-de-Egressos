@@ -18,7 +18,12 @@
 .div-input-login,
 .button-login,
 .cadastrar,
-.card-logo, .content-cadastro, .div-input-cadastro, .form-cadastro, .form-cadastro > div, .buttons, .buttons > button{
+.card-logo,
+.content-cadastro,
+.div-input-cadastro,
+.form-cadastro,
+.buttons,
+.buttons > button {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -100,67 +105,72 @@
   font-weight: bold;
 }
 
-.content-cadastro{
-  height: 60%;
+.content-cadastro {
+  height: 65%;
   width: 90%;
 }
 
-.div-input-cadastro{
+.div-input-cadastro {
   margin-bottom: 5%;
 }
 
-.div-input-cadastro, .form-cadastro, .form-cadastro > div{
+.div-input-cadastro,
+.form-cadastro,
+.form-cadastro > div {
   width: 100%;
 }
 
-.form-cadastro{
+.form-cadastro {
   padding-top: 10%;
 }
 
-.form-cadastro > div{
-  height: 200px;
+.form-cadastro > div {
+  height: 500px;
+  display:flex;
+  flex-direction: column;
+  align-items: start;
 }
-
-.form-cadastro > div > select{
+.form-cadastro > div > input,
+select {
   margin: 10px 0;
   width: 100%;
-  height: 30px;
+  height: 35px;
   padding: 1%;
-
 }
 
-.buttons{
+.buttons {
   flex-direction: row;
-  margin: 5%;
+  margin: 5% 0;
   width: 100%;
 }
 
-.buttons > button{
+.buttons > button {
   flex-direction: row;
   border: none;
-  border-radius:5px;
-  margin: 0 4%;
-  height: 30px;
+  border-radius: 5px;
+  margin: 0 3%;
+  height: 35px;
   width: 33%;
   font-size: 15px;
 }
 
-.input{
+.input {
   padding: 1%;
 }
 
-.buttons > button[type="submit"]{
-  background-color: #F78B1F;
+.buttons > button[type="submit"] {
+  background-color: #f78b1f;
 }
 
-.buttons > button[type="submit"]:hover{
+.buttons > button[type="submit"]:hover {
   background-color: #da8530;
-  color:white;
+  color: white;
 }
 
-.buttons > button[type="reset"]{
+.buttons > button[type="reset"] {
   background-color: white;
 }
-.buttons > button[type="reset"]:hover, .buttons > button:hover{
+.buttons > button[type="reset"]:hover,
+.buttons > button:hover {
   background-color: rgb(208, 208, 208);
 }

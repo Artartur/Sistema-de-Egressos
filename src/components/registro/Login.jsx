@@ -5,15 +5,12 @@ import MaskedInput from "./MaskedInput";
 import "../../styles/login.css";
 
 export default function Login() {
-  const options = [
-    { id: 1, label: "Aluno (Graduação ou Pós)" },
-    { id: 2, label: "Administração" },
-  ];
+  const options = ["Aluno (Graduação ou Pós)", "Administração"];
 
   const navigate = useNavigate();
 
   const [cpf, setCpf] = useState("");
-  const [selectValue, setSelectValue] = useState(options[0].label);
+  const [selectValue, setSelectValue] = useState(options[0]);
 
   return (
     <>
@@ -38,8 +35,8 @@ export default function Login() {
                 onChange={(e) => setSelectValue(e.target.value)}
               >
                 {options.map((opcao) => (
-                  <option key={opcao.id} value={opcao.label}>
-                    {opcao.label}
+                  <option key={opcao} value={opcao}>
+                    {opcao}
                   </option>
                 ))}
               </select>
@@ -47,10 +44,9 @@ export default function Login() {
               <MaskedInput
                 value={cpf}
                 onChange={(e) => setCpf(e.target.value)}
-                className="test"
               />
 
-              {selectValue == options[0].label ? (
+              {selectValue == options[0] ? (
                 <div className="cadastrar">
                   <button
                     className="btn-cadastro"
@@ -67,9 +63,8 @@ export default function Login() {
 
               <div className="button-login">
                 <button
-                  className="btn-cadastro"
                   onClick={() => {
-                    navigate("/form");
+                    navigate("/home");
                   }}
                 >
                   Entrar
