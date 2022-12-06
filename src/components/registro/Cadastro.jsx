@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import ContainerCadastro from "./ContainerCadastro";
@@ -10,11 +10,22 @@ const Cadastro = () => {
   const navigate = useNavigate();
 
   
-  const [values, setValues] = useState();
+  const [values, setValues] = useState("");
+  const [select,setSelect] = useState("");
+
   // const [error, setError] = useState("");
   // const {cadastrar} = useAuth();
 
-  const options = ['Masculino', 'Feminino', 'Prefiro não Informar'];
+  const options = ["Masculino", "Feminino", "Prefiro não Informar"]
+
+  const handleSelect = (value) =>{
+    setValues((prevValue) => ({
+      ...prevValue,
+      [value.target.name]: value.target.value,
+    }));
+    
+    setSelect(value.target.value)
+  }
 
   const handleChangeValues = (value) => {
     setValues((prevValue) => ({
@@ -36,7 +47,6 @@ const Cadastro = () => {
       .catch((err) => {
         console.log(err);
       });
-
   };
 
   return (
@@ -52,7 +62,7 @@ const Cadastro = () => {
                   name="nome"
                   type="text"
                   placeholder="Nome Completo"
-                  required={true}
+                  required
                   onChange={handleChangeValues}
                 />
                 <label htmlFor="email">Email</label>
@@ -60,24 +70,26 @@ const Cadastro = () => {
                   id="email"
                   type="email"
                   placeholder="Email"
-                  required={true}
+                  required
                   name="email"
                   onChange={handleChangeValues}
                 />
                 <label htmlFor="cpf">CPF</label>
                 <input
+                  id="cpf"
                   type="text"
                   placeholder="CPF"
-                  required={true}
+                  required
                   name="cpf"
                   onChange={handleChangeValues}
                 />
-                <select name="sexo" id="sexo" onChange={handleChangeValues}>
+                <label htmlFor="sexo">Gênero</label>
+                <select name="sexo" id="sexo" value={select} onChange={handleSelect} required>
+                  <option value="" disabled>Selecionar</option>
                   {options.map((opcao) => (
                     <option key={opcao} value={opcao}>{opcao}</option>
                   ))}
                 </select>
-
                 <div className="buttons">
                   <button
                     onClick={() => {
@@ -94,6 +106,7 @@ const Cadastro = () => {
                 </div>
               </div>
             </form>
+            
           </div>
         </div>
       </ContainerCadastro>
