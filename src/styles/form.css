@@ -54,10 +54,11 @@ form > div,
   margin-bottom: 5%;
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 80%;
+  width: 100%;
 }
 
 form {
+  width: 100%;
   padding-top: 1260px;
 }
 
@@ -80,7 +81,7 @@ form > div > h4 {
 }
 
 .button {
-  width: 80%;
+  width: 100%;
   flex-direction: row;
 }
 
