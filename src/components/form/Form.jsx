@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
-import Container from "./container";
+import Container from "./Container";
 import "../../styles/form.css";
 
 export default function Form() {
@@ -37,7 +37,7 @@ export default function Form() {
             <div className="button">
               <button
                 onClick={() => {
-                  navigate("/telaaluno");
+                  navigate("/home");
                 }}
               >
                 {" "}

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import InputForm from "./InputForm";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import Container from "./container";
+import Container from "./Container";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
 
