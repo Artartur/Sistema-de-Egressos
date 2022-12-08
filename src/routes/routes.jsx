@@ -7,7 +7,6 @@ import Login from "../components/registro/Login";
 import Cadastro from "../components/registro/Cadastro";
 import TelaInicial from "../components/telas/TelaInicial";
 import TelaInicialAdm from "../components/telas/TelaInicialAdm";
-import "../app.css";
 import useAuth from "../hooks/useAuth";
 
 const Private = ({ Item }) => {

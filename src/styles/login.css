@@ -180,11 +180,11 @@ select {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 100%;
     justify-content: center;
     margin: 0 auto;
     margin-top: 3%;
-    width: 60%;
+    width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
