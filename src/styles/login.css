@@ -177,13 +177,12 @@ select {
   .container-login {
     align-items: center;
     background-color: rgb(249, 249, 249);
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 1000px;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 50%;
     width: 100%;
   }
 }
