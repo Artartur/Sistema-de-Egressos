@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
-import Container from "./Container";
+import Container from './Container'
 import "../../styles/form.css";
 
 export default function Form() {
