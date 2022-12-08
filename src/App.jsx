@@ -7,9 +7,9 @@ function App() {
   
   return (
     <>
-    <AuthProvider>
+    {/* <AuthProvider> */}
       <Routess/>
-    </AuthProvider>
+    {/* </AuthProvider> */}
 
     </>
   )

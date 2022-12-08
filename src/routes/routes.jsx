@@ -21,13 +21,13 @@ export default function Routess() {
       <Br>
         <Routes>
           <Route exact path="/" element={<Login />} />
-          <Route path="/home" element={<Private Item={TelaInicial} />} />
+          <Route path="/home" element={/*<Private Item=>*/<TelaInicial/> /*/>*/} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
 
-          {/* <Route path="/form" element={<Form/>}/>
+          <Route path="/form" element={<Form/>}/>
         <Route path="/form/page2" element={<Form2/>}/>
-        <Route path="/form/page3" element={<Form3/>}/> */}
+        <Route path="/form/page3" element={<Form3/>}/>
           {/* <Route path="/home/adm" element={<TelaInicialAdm/>}/> */}
         </Routes>
       </Br>
