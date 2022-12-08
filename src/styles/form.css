@@ -166,7 +166,7 @@ form > div > h4 {
     flex-direction: column;
     height: 630px;
     justify-content: center;
-    margin: 15% auto;
-    width: 95%;
+    margin: 10% auto;
+    width: 90%;
   }
 }
