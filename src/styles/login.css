@@ -173,17 +173,16 @@ select {
   background-color: rgb(208, 208, 208);
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .container-login {
     align-items: center;
     background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: 560px;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 50%;
-    width: 100%;
+    margin: 15% auto;
+    width: 90%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
