@@ -4,7 +4,7 @@ import { FaAngleLeft, FaAngleRight  } from "react-icons/fa";
 import InputForm from "./InputForm";
 import SelectForm from "./SelectForm";
 import "../../styles/form.css";
-import Container from "./Container";
+import Container from "./container";
 
 export default function Form3() {
   const navigate = useNavigate();
