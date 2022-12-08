@@ -8,8 +8,6 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 3%;
-  max-height: 550px;
-  max-width: 40%;
   width: 30%;
 }
 
@@ -182,11 +180,11 @@ select {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 50%;
     justify-content: center;
     margin: 0 auto;
     margin-top: 3%;
-    width: 100%;
+    width: 60%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
