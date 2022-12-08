@@ -28,7 +28,7 @@ export default function Routess() {
           <Route path="/form" element={<Form/>}/>
         <Route path="/form/page2" element={<Form2/>}/>
         <Route path="/form/page3" element={<Form3/>}/>
-          {/* <Route path="/home/adm" element={<TelaInicialAdm/>}/> */}
+          <Route path="/home/adm" element={<TelaInicialAdm/>}/>
         </Routes>
       </Br>
     </>

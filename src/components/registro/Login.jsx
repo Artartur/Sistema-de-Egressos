@@ -60,8 +60,8 @@ export default function Login() {
               ) : (
                 ""
               )}
-
-              <div className="button-login">
+              {selectValue == options[0] ?(
+                <div className="button-login">
                 <button
                   onClick={() => {
                     navigate("/home");
@@ -69,7 +69,17 @@ export default function Login() {
                 >
                   Entrar
                 </button>
-              </div>
+              </div>)
+              :(<div className="button-login">
+              <button
+                onClick={() => {
+                  navigate("/home/adm");
+                }}
+              >
+                Entrar
+              </button>
+            </div>)}
+              
             </form>
           </div>
         </div>
