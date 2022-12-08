@@ -46,6 +46,7 @@ form > div,
   text-align: center;
   word-break: break-word;
   width: 80%;
+  font-size: 80%;
 }
 
 .div-input {
@@ -57,7 +58,7 @@ form > div,
 }
 
 form {
-  padding-top: 1400px;
+  padding-top: 1260px;
 }
 
 .form2{
@@ -163,9 +164,9 @@ form > div > h4 {
     background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
-    height: 560px;
+    height: 630px;
     justify-content: center;
     margin: 15% auto;
-    width: 90%;
+    width: 95%;
   }
 }
