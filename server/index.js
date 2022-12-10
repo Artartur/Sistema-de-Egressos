@@ -30,6 +30,38 @@ app.post('/registro', (req, res) => {
     })
 })
 
+app.post('/form', (req, res) =>{
+    const { nome } = req.body;
+    const { cpf } = req.body;
+    const { email } = req.body;
+    const { datanascimento } = req.body;
+    const { sexo } = req.body;
+    const { civil } = req.body;
+    const { carteira } = req.body;
+    const { veiculo } = req.body;
+    const { endereco } = req.body;
+    const { complemento } = req.body;
+    const { bairro } = req.body;
+    const { cidade } = req.body;
+    const { uf } = req.body;
+    const { cep } = req.body;
+    const { telefoneR } = req.body;
+    const { celular } = req.body;
+    const { curso } = req.body;
+    const { conclusao } = req.body;
+    const { curso2 } = req.body;
+    const { conclusao2 } = req.body;
+    const { curso3 } = req.body;
+    const { conclusao3 } = req.body;
+    const { curriculo } = req.body;
+
+    let SQL = "INSERT INTO formulario (cpf,email,nome,datanascimento,sexo,civil,carteira,veiculo,endereco,complemento,bairro,cidade,uf,cep,telefoneR,celular,curso,conclusao,curso2,conclusao2,curso3,conclusao3,curriculo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+  
+    db.query(SQL, [cpf,email,nome,datanascimento,sexo,civil,carteira,veiculo,endereco,complemento,bairro,cidade,uf,cep,telefoneR,celular,curso,conclusao,curso2,conclusao2,curso2,conclusao2,curriculo],(err, res)=>{
+      console.log(err);
+    })
+});
+
 app.listen(3001, ()=>{
     console.log("Server On")
 })

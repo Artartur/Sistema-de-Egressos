@@ -13,13 +13,11 @@ body {
 .container,
 .logo,
 .content,
-.card-inputs,
 .div-input,
 form,
 form > div,
 .button,
-.card-select,
-.button > button{
+.button > button, .div-form{
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -38,7 +36,6 @@ form > div,
 }
 
 .content {
-  margin: 5% 0;
   width: 100%;
 }
 
@@ -46,7 +43,6 @@ form > div,
   text-align: center;
   word-break: break-word;
   width: 80%;
-  font-size: 80%;
 }
 
 .div-input {
@@ -54,30 +50,28 @@ form > div,
   margin-bottom: 5%;
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 100%;
+  width: 80%;
 }
 
 form {
   width: 100%;
-  padding-top: 1260px;
-}
-
-.form2{
-  padding-top: 80%;
-}
-
-.form3{
-  padding-top: 50%;
+  padding-top:540%;
 }
 
 form > div {
   margin-bottom: 10px;
+  width: 100%;
 }
 
-form > div > h4 {
-  text-align: center;
-  word-break: break-word;
-  width: 100%;
+.div-input > form > .div-form > input, .div-form > select{
+  width: 90%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 1%;
+}
+
+.div-form > label{
+  width: 90%;
 }
 
 .button {
@@ -90,8 +84,8 @@ form > div > h4 {
   border-radius: 5px;
   flex-direction: row;
   height: 40px;
-  margin: 0% 3%;
-  width: 30%;
+  margin: 0% 2%;
+  width: 25%;
 }
 
 .button > button:first-of-type:hover{
@@ -125,38 +119,6 @@ form > div > h4 {
   background-color: rgb(217, 217, 217);
 }
 
-.card-inputs,
-.card-select {
-  background-color: rgb(225, 225, 225);
-  border-radius: 5px;
-  height: 80px;
-  margin: 10px 0;
-  width: 500px;
-}
-
-.card-inputs > .inputs,
-.select {
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.inputs > label,
-.select > label {
-  margin: 5px 0;
-}
-
-.inputs > input,
-.select > select {
-  width: 450px;
-  height: 30px;
-  padding: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 @media screen and (max-width: 600px) {
   .container {
@@ -164,9 +126,64 @@ form > div > h4 {
     background-color: rgb(249, 249, 249);
     display: flex;
     flex-direction: column;
-    height: 630px;
+    height: 600px;
     justify-content: center;
     margin: 10% auto;
     width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    justify-content: center;
+    margin: 15% auto;
+    width: 90%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    justify-content: center;
+    margin: 15% auto;
+    width: 80%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    margin: 15% auto;
+    width: 70%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 30%;
   }
 }
