@@ -57,7 +57,7 @@ app.post('/form', (req, res) =>{
 
     let SQL = "INSERT INTO formulario (cpf,email,nome,datanascimento,sexo,civil,carteira,veiculo,endereco,complemento,bairro,cidade,uf,cep,telefoneR,celular,curso,conclusao,curso2,conclusao2,curso3,conclusao3,curriculo) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
   
-    db.query(SQL, [cpf,email,nome,datanascimento,sexo,civil,carteira,veiculo,endereco,complemento,bairro,cidade,uf,cep,telefoneR,celular,curso,conclusao,curso2,conclusao2,curso2,conclusao2,curriculo],(err, res)=>{
+    db.query(SQL, [cpf,email,nome,datanascimento,sexo,civil,carteira,veiculo,endereco,complemento,bairro,cidade,uf,cep,telefoneR,celular,curso,conclusao,curso2,conclusao2,curso3,conclusao3,curriculo],(err, res)=>{
       console.log(err);
     })
 });
