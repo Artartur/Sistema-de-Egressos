@@ -3,7 +3,7 @@
     "background_color": "#0D507B",
     "display": "standalone",
     "scope": "/",
-    "start_url": "index.html",
+    "start_url": "/?utm_source=homescreen",
     "name": "Sistema de Egresso",
     "short_name": "Sistema-Egresso",
     "icons": [
