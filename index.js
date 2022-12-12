@@ -15,6 +15,11 @@ const db = mysql.createPool({
   database: process.env.DATABASE
 });
 
+
+app.get('/', (req, res) =>{
+    res.send(db.query('SELECT * FROM cadastro Where cpf'));
+})
+
 app.post('/registro', (req, res) => {
     const { nome } = req.body;
     const { email } = req.body;

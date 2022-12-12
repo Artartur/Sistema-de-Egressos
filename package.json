@@ -2,8 +2,8 @@
   "name": "sistema-egresso",
   "private": true,
   "version": "0.0.0",
-  "engines":{
-    "node":"14.x"
+  "engines": {
+    "node": "14.x"
   },
   "scripts": {
     "dev": "vite",
@@ -19,6 +19,7 @@
     "express-generator": "^4.16.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",

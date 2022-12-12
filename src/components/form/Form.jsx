@@ -115,7 +115,7 @@ export default function Form() {
 
   const handleSubmit = () => {
     api
-      .post("http://localhost:3001/form", {
+      .post("https://sistema-egresso.herokuapp.com/form", {
         cpf: values.cpf,
         email: values.email,
         nome: values.nome,
