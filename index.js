@@ -8,11 +8,12 @@ const mysql = require("mysql2");
 app.use(cors());
 app.use(express.json());
 
-const db = process.env.DATABASE
-
-app.get('/', (req, res) => {
-    res.send("hello world")
-})
+const db = mysql.createPool({
+  host: process.env.HOST,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  database: process.env.DATABASE
+});
 
 app.post('/registro', (req, res) => {
     const { nome } = req.body;

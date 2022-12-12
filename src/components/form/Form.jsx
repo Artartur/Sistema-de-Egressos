@@ -134,6 +134,10 @@ export default function Form() {
         celular: values.celular,
         curso: values.curso,
         conclusao: values.conclusao,
+        curso2: values.curso2,
+        conclusao2: values.conclusao2,
+        curso3: values.curso3,
+        conclusao3: values.conclusao3,
         curriculo: values.curriculo,
       })
       .then((res) => {
