@@ -184,7 +184,7 @@ select {
     margin: 15% auto;
     width: 90%;
   }
-}
+} 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .container-login {
